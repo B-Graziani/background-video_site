@@ -12,6 +12,39 @@
   </head>
 
   <body>
+    <section class="Lpage ">
+      <header>
+        <h2 class="logo">Travel</h2>
+        <div class="hamburger "></div>
+      </header>
+      <div class="video">
+        <%= video_tag "paysage.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
+      </div>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Exploring The World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a fuga eaque, doloremque iure dicta error reiciendis voluptatem aut ut hic, officiis modi ipsum deserunt dolor commodi. Aliquid, obcaecati, fugit.</p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li><a href="#"><%= image_tag "fb.png" %></a></li>
+        <li><a href="#"><%= image_tag "twitte.png" %></a></li>
+        <li><a href="#"><%= image_tag "pinterest.png" %></a></li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>
+
+
+
